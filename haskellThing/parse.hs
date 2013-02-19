@@ -34,7 +34,7 @@ moveAllJS ::String -> String -> IO ()
 moveAllJS s d = createDirectoryIfMissing True d >> foldr(\l r -> copyFile ((s++"\\") ++ l) ((d ++ "\\") ++ l) >> r) (return ()) js
 
 execNode :: IO ()
-execNode = runCommand "..\\node \"..\\process_data.js\"" >> return () 
+execNode = runCommand "..\\node \"..\\process_data.js\"" >>= waitForProcess >> return () 
 
 data CourseJ = CourseJ {
 	college' :: String,
