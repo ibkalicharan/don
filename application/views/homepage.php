@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-responsive.min.css">
 
- 	<title>Welcome to CodeIgniter</title>
+ 	<title>MyED 2."oh"</title>
 
 </head>
 <body>
@@ -21,7 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">MyED <small>2.0</small></a>
+          <a class="brand" href="#">MyED <small>2.0 POC</small></a>
           <div class="nav-collapse collapse">
             <form class="navbar-search pull-right">
   				<input type="text" class="search-query" placeholder="Search MyED" data-provide="typeahead" data-items="4" data-source="[&quot;Timetable&quot;,&quot;Personal Tutor&quot;,&quot;EUSA&quot;,&quot;Buses&quot;]">
