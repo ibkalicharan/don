@@ -4,8 +4,8 @@
 <head>
    
      <title>Login</title>
-     <link rel="stylesheet" href="/biznet/resources/bootstrap/css/bootstrap.min.css">
-     <link rel="stylesheet" href="/biznet/resources/bootstrap/css/bootstrap-responsive.min.css">
+     <link rel="stylesheet" href="/ilw/resources/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/ilw/resources/css/bootstrap-responsive.min.css">
      
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,50 +34,9 @@
 
   <div class="container-fluid">
 
-  <!-- Load Standard Modals -->
-  <?php $this->load->view('stdcomponents/standard_modals'); ?>
-  <!-- End Load Standard Modals -->
-
-  <!-- More Info Modal -->
-      <div class="modal hide fade" id="moreInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">More Info</h3>
-      </div>
-      <div class="modal-body">
-        <p>BizNet is the best way ever invented for your company to communicate with itself.</p>
-        <p>Think of it as a beehive. But with more honey.</p>
-        <p>It's currently in a very early alpha though. That's probably why you do not have authentication credentials. Showing a crayon-drawn ID card to your webcam may let you through though.</p>
-      </div>
-      <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-      </div>
-      </div>
-  <!-- End More Info Modal -->
-
-  <!-- HTTPS Modal -->
-      <div class="modal hide fade" id="https" tabindex="-1" role="dialog" aria-labelledby="httpsModalLabel" aria-hidden="true">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h3 id="httpsModalLabel">Problem!</h3>
-        </div>
-        <div class="modal-body">
-          <p>Sorry, a secure connection (HTTPS) is not yet available. Keep clicking on in hope though.</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        </div>
-      </div>
-    <!-- End HTTPS Modal -->
-
   <!-- Main Page -->
     <div class="row-fluid">
-    
-    <!-- Sidebar -->    
-    <?php $this->load->view('stdcomponents/logon_sidebar'); ?>
-		<!-- End Sidebar -->
-
-
+  
     <!-- Main Content -->
     <div class="span8"> 
      <div class="hero-unit">
@@ -118,11 +77,9 @@
   <!-- End Main Page -->
 
   <!-- NO CONTENT BELOW THIS LINE. JS ONLY -->
-  <?php $this->load->view('stdcomponents/standard_scripts'); ?>
-  
-  <script> 
-  $("https").popover();
-  </script>
+  <script src="resources/js/jquery.min.js"></script>
+  <script src="resources/js/bootstrap.js"></script>
+  <script src="resources/js/holder.js"></script>
 
 </body>
 
