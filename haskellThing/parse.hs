@@ -22,14 +22,16 @@ loadJS fn = do {
 	length f `seq` writeFile fn f
 }
 
+js = ["CoursesBasicData.js", "Courses12Data.js", "Events12Data.js", "Courses345Data.js", "Events345Data.js", "Courses345Data1.js", "Courses345Data2.js", "Courses3Data.js", "Courses4Data.js", "Courses5Data.js"]
+
 processAllJS :: String -> IO ()
-processAllJS d = foldr (\l r -> loadJS l >> r) (return ()) $ map ((d ++ "\\") ++) ["CoursesBasicData.js", "Courses12Data.js", "Events12Data.js"]
+processAllJS d = foldr (\l r -> loadJS l >> r) (return ()) $ map ((d ++ "\\") ++) js
 
 extractTimetable :: String -> IO ()
 extractTimetable s = createDirectory "tt" >> BS.readFile s >>= Tar.unpack "tt" . Tar.read . GZip.decompress
 
 moveAllJS ::String -> String -> IO ()
-moveAllJS s d = createDirectoryIfMissing True d >> foldr(\l r -> copyFile ((s++"\\") ++ l) ((d ++ "\\") ++ l) >> r) (return ()) ["CoursesBasicData.js", "Courses12Data.js", "Events12Data.js"]
+moveAllJS s d = createDirectoryIfMissing True d >> foldr(\l r -> copyFile ((s++"\\") ++ l) ((d ++ "\\") ++ l) >> r) (return ()) js
 
 execNode :: IO ()
 execNode = runCommand "..\\node \"..\\process_data.js\"" >> return () 
