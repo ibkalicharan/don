@@ -35,7 +35,7 @@ for x in listOfFiles:
         i +=1
 
 out.write("END:VCALENDAR")
-print "Merging successful. File " + outputName + "created."
+
 
 
 
