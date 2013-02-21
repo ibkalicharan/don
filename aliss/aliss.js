@@ -33,4 +33,4 @@ function getAliss(map, location, count, terms){
 // location: place to focus on (presumably edinburgh)
 // terms: search text
 
-// needs jquery and underscore.js
+// needs jquery

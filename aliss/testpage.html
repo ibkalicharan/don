@@ -11,7 +11,6 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvl8SJyJclRdoAnsvTxt9eno4TRfZ7dnM&sensor=false">
     </script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="underscore-min.js"></script>
     <script src="aliss.js"></script>
     <script type="text/javascript">
       function initialize() {
@@ -23,7 +22,7 @@
         var map = new google.maps.Map(document.getElementById("map_canvas"),
             mapOptions);
 
-        var markers = getAliss(map, "edinburgh", 100, "student")
+        getAliss(map, "edinburgh", 100, "")
       }
     </script>
   </head>
