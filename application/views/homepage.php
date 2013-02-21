@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
@@ -46,9 +46,9 @@
     	<div class="well">
     		<!--User Info-->
     		<p>Welcome, Connor!</p>
-    		
+
     		<p><center><img src="holder.js/140x140" class="img-polaroid"></center><p>
-    		
+
     		<p><small>Connor Stuart<br>S1204589<br>College of Science and Engineering<br>School of Informatics<br>Master of Informatics (MInf)<br>Year 1</small></p>
 
     		<!--User-Specific Tasks-->
@@ -59,7 +59,7 @@
     		<!--Global options/tasks-->
     		<h5>Options:</h5>
     		<div class="btn btn-inverse btn-block">Logout</div>
-    	</div>	
+    	</div>
     </div>
     <!--/Sidebar-->
 
@@ -70,11 +70,11 @@
 
           <h4><a href="#notifModal" data-toggle="modal">You have 3 notifications!</a></h4>
           <p>Some common tasks are listed underneath. Above, the "me" tab takes you to a page about you, the "studies" tab takes you to all things related to your degree and the "local" tab shows you what's happening around town.</p>
-        
+
         </div>
 
         <div class="row-fluid">
-          
+
           <div class="span4">
             <h2>Timetable</h2>
             <p>View your University timetable; add tutorials and other committments, then export it to your calendar.</p>
@@ -111,8 +111,25 @@
 
           <div class="span4">
             <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
+            <form action="http://maps.google.com/maps" method="get" target="_blank">
+                Where are you now:
+                <select name="saddr">
+                    <option value="Appleton Tower, Informatics, 11 Crichton St, Edinburgh, Edinburgh, United Kingdom">Appleton Tower</option>
+                    <option value="David Hume Tower - University of Edinburgh">David Hume Tower</option>
+                    <option value="Old College, South Bridge, Edinburgh EH8 9YL, United Kingdom">Old College</option>
+                </select>
+                <br>
+                Where do you want to go:
+                <input type="text" name="daddr"/>
+                <br>
+                How do you want to go there:
+                    <select name="dirflg">
+                        <option value="r">By bus</option>
+                        <option value="h">By car</option>
+                        <option value="w">By walking</option>
+                    </select>
+                <input type="submit" value="get directions" />
+            </form>
           </div><!--/span-->
 
         </div><!--/row-->
@@ -136,7 +153,7 @@
               <small>Today at 14:27</small></p>
 
               <hr>
-              
+
               <h5>A new announcement was posted in Economics 1A on Learn...</h4>
               <p><a href="#" class="btn">Go to Learn</a></p>
               <small>Yesterday at 10:19</small>
