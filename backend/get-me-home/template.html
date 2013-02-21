@@ -1,0 +1,6 @@
+<ul id="flights">
+    {% for flight in flights %}
+        <li class="flights"> {{flight['price']}} {{ flight['currency'] }} to get to {{ flight['destination']}} from {{ flight['origin'] }} <a href="{{ flight['booking_link'] }}">{{ flight['carrier'] }}</a></li>
+    {% endfor %}
+    <li></li>
+</ul>
