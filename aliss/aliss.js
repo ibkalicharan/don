@@ -1,27 +1,36 @@
-		function getAliss(map, location){
-			var markers = []
-			$.ajax({
-				dataType: "jsonp",
-				url: "http://www.aliss.org/api/resources/search/?callback=?", 
-				data: {
-					location: location
-				}, 
-				success: function(data) {
-					console.log("request succeeded");
-					$.each(data.data.results, function (item) {
-						$.each(zip(item.locations, item.locationnames), function (loc) {
-							markers.push(new google.maps.Marker({
-								position: new gooogle.maps.LatLng(loc[0][0], loc[0][1]),
-								map: map,
-								title: "<a href=\"" + item.uri + "\">" + item.title + "</a><br/>" + loc[1] 
-							}));
-							console.log("<a href=\"" + item.uri + "\">" + item.title + "</a><br/>" + loc[1] )
-						});
-					});
-				}
-			});
-			return markers;
-		}
+function getAliss(map, location, count, terms){
+	$.ajax({
+		dataType: "jsonp",
+		url: "http://www.aliss.org/api/resources/search/?callback=?", 
+		data: {
+			location: location,
+			max: count,
+			query: terms
+		}, 
+		success: function(data) {
+			$.each(data.data[0].results, function (i, item) {
+				var locParts = item.locations[0].split(', ')
+				var pos = new google.maps.LatLng(parseFloat(locParts[0]), parseFloat(locParts[1]))
+				var marker = new google.maps.Marker({
+					position: pos,
+					map: map,
+					title: item.title
+				});
 
-// VERY WIP
+				var infowindow = new google.maps.InfoWindow({
+					content: "<a href=\"" + item.uri + "\">" + item.title + "</a><br/>" + item.locationnames[0]
+				});
+
+				google.maps.event.addListener(marker, 'click', function () {
+					infowindow.open(map, marker);
+				});
+			});
+		}
+	});
+}
+
+// count : number of items to retrieve
+// location: place to focus on (presumably edinburgh)
+// terms: search text
+
 // needs jquery and underscore.js
