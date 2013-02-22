@@ -1,2 +1,12 @@
 .DS_Store
+
+
 application/config/ilw.php
+*.apikey
+*.key
+
+# Haskell stuff
+*.hi
+*.o
+*.exe
+*.tar.gz

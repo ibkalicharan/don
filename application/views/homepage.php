@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
 	
+=======
+
+	<meta charset="utf-8">
+>>>>>>> bb0c78b9c24e3035bc341ec9f8c0f75f10cc833f
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php $this->load->view('stdcomponents/stdhead'); ?>
 
@@ -50,7 +55,8 @@
     		<!--User Info-->
     		<p>Welcome, <?php echo($fName);?></p>
     	
-    		<p><center><img src="holder.js/140x140" class="img-polaroid"></center><p>
+        <p><center><img src="resources/img/cat_profile.jpg" class="img-polaroid"></center><p>
+
     		
     		<p><small><?php echo($fName);?> <?php echo($lName);?><br><?php echo($mNumber);?><br><?php echo($school);?><br><?php echo($degree);?></small></p>
 
@@ -62,8 +68,10 @@
     		
     		<!--Global options/tasks-->
     		<h5>Options:</h5>
+
     		<a href="http://localhost:8888/ilw/index.php/admin/logout" class="btn btn-inverse btn-block">Logout</a>
     	</div>	
+
     </div>
     <!--/Sidebar-->
 
@@ -73,6 +81,7 @@
         <div class="well well-small">
 
           <h4><a href="#notifModal" data-toggle="modal">You have 3 notifications!</a></h4>
+
           <p>Some common tasks are listed underneath. Above, the "me" tab takes you to a page about you, the "studies" tab takes you to all things related to your degree and the "local" tab shows you what's happening around town. </p>
         
         </div>
@@ -81,6 +90,7 @@
           
           <div class="span6">
             <div class="well">
+
             <h2>Timetable</h2>
             <hr>
             <p>Generate your university timetable here, then export it to your favourite calendar program.</p>
@@ -142,6 +152,7 @@
                     <option value="Old College, South Bridge, Edinburgh EH8 9YL, United Kingdom">Old College</option>
                     <option value="King's Buildings, W Mains Rd, Edinburgh, City of Edinburgh EH9 3JG, UK">Kings Buildings</option>
                     <option value="New College on the Mound, Edinburgh">New College</option>
+
                 </select>
                 <br>
                 Where do you want to go:
@@ -194,7 +205,7 @@
               <small>Today at 14:27</small></p>
 
               <hr>
-              
+
               <h5>A new announcement was posted in Economics 1A on Learn...</h4>
               <p><a href="#" class="btn">Go to Learn</a>
               <br>
@@ -217,7 +228,7 @@
 <!--Le Javascript-->
 
 <script src="http://localhost:8888/ilw/resources/js/bootstrap.js"></script>
-<script src="http://localhost:8888/ilw/resources/js/holder.js"></script>
+<!-- <script src="http://localhost:8888/ilw/resources/js/holder.js"></script> -->
 
 </body>
 </html>

@@ -1,8 +1,13 @@
 MyEd 2.oh-dear
 ==============
 
+[See it in action!](http://54.228.211.86/ilw/)
+
 A proof of concept design on how some MyEd functionality could be implemented
-in an alternative way using a variety of University and City data sets.
+in an alternative way using a wide selection of University and City data sets.
+A variety of different services are included in this, including RSS feeds and
+an updated timetabling service.
+
 
 
 Features
@@ -17,3 +22,4 @@ remove all asbestos, turning the concrete monolith of death into a building
 that's actually safe to work in.
 
 Please note: Not all features will make it into the final release.
+
