@@ -111,7 +111,7 @@
             <hr>
             <p>Got a problem? Need some help or advice? Here you'll find loads of local support services outside of the University that can help you with all manner of problems.</p>
             <p><small>Provided by ALISS</small></p>
-            <p><a class="btn" href="54.228.211.86/ilw/index.php/local/aliss">View details &raquo;</a></p>
+            <p><a class="btn" href="http://54.228.211.86/ilw/index.php/local/aliss">View details &raquo;</a></p>
           </div>
           </div><!--/span-->
 
