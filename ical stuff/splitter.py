@@ -3,11 +3,11 @@
 ##imetable.
 
 #Change this to the source .CSV file
-SOURCE_FILE = "PATH"
+SOURCE_FILE = "C:\Users\Jamie\Documents\GitHub\don\data\courses\sanitizedCourseData.csv"
 
 #Change this to your output directory for 'n' .ics files, where n is the number of rows in your
 #Must finish with "\\" to allow filenames to be dynamically created correctly.
-OUTPUT_FOLDER = "PATH\\"
+OUTPUT_FOLDER = "C:\Users\Jamie\Desktop\Lectures\\"
 
 bigcsv = open(SOURCE_FILE,'r')
 
