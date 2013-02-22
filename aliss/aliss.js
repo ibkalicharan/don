@@ -11,19 +11,22 @@ function getAliss(map, location, count, terms){
 			$.each(data.data[0].results, function (i, item) {
 				var locParts = item.locations[0].split(', ')
 				var pos = new google.maps.LatLng(parseFloat(locParts[0]), parseFloat(locParts[1]))
-				var marker = new google.maps.Marker({
-					position: pos,
-					map: map,
-					title: item.title
-				});
+				setTimeout(function() {
+					var marker = new google.maps.Marker({
+						position: pos,
+						map: map,
+						title: item.title,
+						animation: google.maps.Animation.DROP
+					});
 
-				var infowindow = new google.maps.InfoWindow({
-					content: "<a href=\"" + item.uri + "\">" + item.title + "</a><br/>" + item.locationnames[0]
-				});
+					var infowindow = new google.maps.InfoWindow({
+						content: "<<a href=\"" + item.uri + "\">" + item.title + "</a><br/>" + item.locationnames[0]
+					});
 
-				google.maps.event.addListener(marker, 'click', function () {
-					infowindow.open(map, marker);
-				});
+					google.maps.event.addListener(marker, 'click', function () {
+						infowindow.open(map, marker);
+					});
+				}, i*50);
 			});
 		}
 	});
