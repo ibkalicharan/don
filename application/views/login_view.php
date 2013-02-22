@@ -1,87 +1,73 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
+   <meta charset="utf-8">
    
-     <title>Login</title>
-     <link rel="stylesheet" href="/ilw/resources/css/bootstrap.min.css">
-     <link rel="stylesheet" href="/ilw/resources/css/bootstrap-responsive.min.css">
-     
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="tinfoil-site-verification" content="cd5612617dc0b100a22b03fe6d90b7543e814d14" />
-     
-     <style type="text/css">
-        body {
-          padding-top: 60px;
-          padding-bottom: 40px;
-        }
-        .sidebar-nav {
-          padding: 9px 0;
-        }
-      </style>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="http://localhost:8888/ilw/resources/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="http://localhost:8888/ilw/resources/css/bootstrap-responsive.min.css">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+   <title>Login</title>
+   
+   <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
+    </style>
 
 </head>
+<body>
 
-<body>	
-	
-    
+<div class="container">
+<?php $attributes = array('class' => 'form-signin');
+echo form_open('admin', $attributes); ?>
 
-  <div class="container-fluid">
+<p><h2 class="form-signin-heading">"EASE"</h2><p>
 
-  <!-- Main Page -->
-    <div class="row-fluid">
-  
-    <!-- Main Content -->
-    <div class="span8"> 
-     <div class="hero-unit">
-      <h2>Please login</h2>
-              	
-	    <?php echo form_open('admin'); ?>
-      <p>
-        <?php 
-          echo form_label('Email Address:  ', 'email_address');
-          echo form_input('email_address', set_value('email_address'), 'id="email_address" autofocus');
-        ?>
-      </p>
+<p>
+   <input type="text" name="username" class="input-block-level" value="" id="username" placeholder="Username" autofocus /></p>
 
-      <p>
-         <?php 
-            echo form_label('Password:  ', 'password');
-            echo form_password('password', '', 'id="password"');
-         ?>
-      </p>
+<p>
+   <input type="password" name="password" class="input-block-level" value="" id="password" placeholder="Password" /></p>
 
-      <p>
-      	<div class="actions">
-         <button type="input" class="btn btn-primary" name="submit" value="Login">Login</button> 
-         <a href="#moreInfo" role="button" class="btn" data-toggle="modal">More Info</a>
-        </div>
-      </p>
-      <?php echo form_close(); ?>
+<p>
+   <input type="submit" class="btn btn-large btn-primary" name="submit" value="Login"  /></p>
 
-      <p>
-        <?php echo validation_errors(); ?> 
-      </p>
-     </div>
-     </div>
-    <!-- End Main Content -->
-  
-    </div>
-    </div>
-  <!-- End Main Page -->
+<?php echo form_close(); ?>
 
-  <!-- NO CONTENT BELOW THIS LINE. JS ONLY -->
-  <script src="resources/js/jquery.min.js"></script>
-  <script src="resources/js/bootstrap.js"></script>
-  <script src="resources/js/holder.js"></script>
+<?php echo validation_errors(); ?>
+</div>
+
 
 </body>
-
 </html>	
-<!-- End HTML -->
+
