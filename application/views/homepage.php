@@ -9,6 +9,7 @@
  	<title>MyED 2."oh"</title>
   <script src="http://54.228.211.86/ilw/resources/js/jquery.min.js"></script>
   <script src="http://54.228.211.86/ilw/resources/js/rss_reader.js"></script>
+  <script type="text/javascript" src="/ilw/resources/js/get_me_home.js"></script>
   <script>
       $(document).ready(getRss("http://54.228.211.86/ilw/resources/js/edinburgh-university-news.xml", "#rss", "#rssLink"));
   </script>
