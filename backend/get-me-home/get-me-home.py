@@ -92,7 +92,7 @@ def get_quotes_html(destination_place, outbound_date, api_key):
     flights = []
     for quote in quotes:
         flight = {'currency': currency, 'origin': origin_place}
-        flight['price'] = quote['MinPrice']
+        flight['price'] = "{:.2f}".format(float(quote['MinPrice']))
         flight['booking_link'] = ''
 
         flight['carrier'] = ''
