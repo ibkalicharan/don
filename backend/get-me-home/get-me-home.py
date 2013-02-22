@@ -16,16 +16,15 @@ def main(args):
     the given inbound and outbound dates.
     """
     outbound_date = args.departure
-    api_key_location = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'skyscanner.apikey')
+    api_key_location = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'skyscanner.key')
 
     try:
         f = open(api_key_location, 'r')
         api_key = f.read().rstrip()
+        f.close()
     except Exception, e:
         print "Could not access API key at " + api_key_location
         raise e
-    finally:
-        f.close()
 
     print get_quotes_html(country_iso_code(args.country), outbound_date, api_key)
 
@@ -44,7 +43,7 @@ def country_iso_code(country_name):
 
     countries = iso_xml.xpath('/ISO_3166-1_List_en/ISO_3166-1_Entry')
     for country in countries:
-        if country.xpath('ISO_3166-1_Country_name')[0].text.upper() == country_name.upper():
+        if country.xpath('ISO_3166-1_Country_name')[0].text.upper().replace(' ', '') == country_name.upper().replace(' ', ''):
             return country.xpath('ISO_3166-1_Alpha-2_Code_element')[0].text
 
     raise ValueError('"' + country_name + '" not in ISO 3166 specification. See http://www.iso.org/iso/country_codes')
@@ -118,11 +117,9 @@ def get_HTML_template():
         template_path = os.path.join(script_dir, 'template.html')
         f = open(template_path, 'r')
         return Template(f.read())
+        f.close()
     except Exception, e:
         raise e
-    finally:
-        f.close()
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Print out an HTML <ul> element of flights to the given country on the given inbound and outbound dates.')
