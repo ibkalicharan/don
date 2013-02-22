@@ -4641,15 +4641,15 @@ input[type="submit"].btn.btn-mini {
   margin-left: 5px;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #000000;
-  *background-color: #000000;
-  background-image: -moz-linear-gradient(top, #000000, #000000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000000), to(#000000));
-  background-image: -webkit-linear-gradient(top, #000000, #000000);
-  background-image: -o-linear-gradient(top, #000000, #000000);
-  background-image: linear-gradient(to bottom, #000000, #000000);
+  background-color: #000241;
+  *background-color: #000241;
+  background-image: -moz-linear-gradient(top, #000241, #000241);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000241), to(#000241));
+  background-image: -webkit-linear-gradient(top, #000241, #000241);
+  background-image: -o-linear-gradient(top, #000241, #000241);
+  background-image: linear-gradient(to bottom, #000241, #000241);
   background-repeat: repeat-x;
-  border-color: #000000 #000000 #000000;
+  border-color: #000241 #000241 #000241;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff000000', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
@@ -4665,13 +4665,13 @@ input[type="submit"].btn.btn-mini {
 .navbar .btn-navbar.disabled,
 .navbar .btn-navbar[disabled] {
   color: #ffffff;
-  background-color: #000000;
-  *background-color: #000000;
+  background-color: #000241;
+  *background-color: #000241;
 }
 
 .navbar .btn-navbar:active,
 .navbar .btn-navbar.active {
-  background-color: #000000 \9;
+  background-color: #000241 \9;
 }
 
 .navbar .btn-navbar .icon-bar {
@@ -6092,7 +6092,7 @@ a.badge:focus {
   bottom: 0;
   left: 0;
   padding: 15px;
-  background: #666999;
+  background: #999999;
   background: rgba(0, 0, 0, 0.75);
 }
 
