@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
-	
-=======
 
 	<meta charset="utf-8">
->>>>>>> bb0c78b9c24e3035bc341ec9f8c0f75f10cc833f
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php $this->load->view('stdcomponents/stdhead'); ?>
 
  	<title>MyED 2."oh"</title>
-  <script src="http://localhost:8888/ilw/resources/js/jquery.min.js"></script>
-  <script src="http://localhost:8888/ilw/resources/js/rss_reader.js"></script>
+  <script src="http://54.228.211.86/ilw/resources/js/jquery.min.js"></script>
+  <script src="http://54.228.211.86/ilw/resources/js/rss_reader.js"></script>
   <script>
-      $(document).ready(getRss("http://localhost:8888/ilw/resources/js/edinburgh-university-news.xml", "#rss", "#rssLink"));
+      $(document).ready(getRss("http://54.228.211.86/ilw/resources/js/edinburgh-university-news.xml", "#rss", "#rssLink"));
   </script>
 </head>
 <body>
@@ -55,7 +51,7 @@
     		<!--User Info-->
     		<p>Welcome, <?php echo($fName);?></p>
     	
-        <p><center><img src="resources/img/cat_profile.jpg" class="img-polaroid"></center><p>
+        <p><center><img src="http://54.228.211.86/ilw/resources/img/cat_profile.jpg" class="img-polaroid"></center><p>
 
     		
     		<p><small><?php echo($fName);?> <?php echo($lName);?><br><?php echo($mNumber);?><br><?php echo($school);?><br><?php echo($degree);?></small></p>
@@ -69,7 +65,7 @@
     		<!--Global options/tasks-->
     		<h5>Options:</h5>
 
-    		<a href="http://localhost:8888/ilw/index.php/admin/logout" class="btn btn-inverse btn-block">Logout</a>
+    		<a href="http://54.228.211.86/ilw/index.php/admin/logout" class="btn btn-inverse btn-block">Logout</a>
     	</div>	
 
     </div>
@@ -227,7 +223,7 @@
 
 <!--Le Javascript-->
 
-<script src="http://localhost:8888/ilw/resources/js/bootstrap.js"></script>
+<script src="http://54.228.211.86/ilw/resources/js/bootstrap.js"></script>
 <!-- <script src="http://localhost:8888/ilw/resources/js/holder.js"></script> -->
 
 </body>

@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8888/ilw/';
+$config['base_url']	= 'http://54.228.211.86/ilw/';
 
 /*
 |--------------------------------------------------------------------------
