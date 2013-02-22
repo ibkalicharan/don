@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
     <?php $this->load->view('stdcomponents/stdhead'); ?>
@@ -15,7 +15,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvl8SJyJclRdoAnsvTxt9eno4TRfZ7dnM&sensor=false">
     </script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="http://localhost:8888/ilw/resources/js/aliss.js"></script>
+    <script src="/ilw/resources/js/aliss.js"></script>
     <script type="text/javascript">
       function initialize() {
         var mapOptions = {
@@ -31,18 +31,18 @@
     </script>
   </head>
   <body onload="initialize()">
-    
+
     <div class="navbar">
       <div class="navbar-inner">
         <a class="brand" href="#">MyED <small>2.0 POC</small></a>
         <ul class="nav">
-          <li><a href="http://localhost:8888/ilw/index.php/local">Back</a></li>
+          <li><a href="/ilw/index.php/local">Back</a></li>
         </ul>
       </div>
     </div>
-    
+
       <div id="map_canvas" style="width:100%; height:100%"></div>
-    
-  
+
+
   </body>
 </html>

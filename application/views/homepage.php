@@ -50,10 +50,10 @@
     	<div class="well">
     		<!--User Info-->
     		<p>Welcome, <?php echo($fName);?></p>
-    	
+
         <p><center><img src="http://54.228.211.86/ilw/resources/img/cat_profile.jpg" class="img-polaroid"></center><p>
 
-    		
+
     		<p><small><?php echo($fName);?> <?php echo($lName);?><br><?php echo($mNumber);?><br><?php echo($school);?><br><?php echo($degree);?></small></p>
 
     		<!--User-Specific Tasks-->
@@ -61,12 +61,12 @@
     		<a href="http://outlook.com/ed.ac.uk" target="_blank" class="btn btn-block"><i class="icon-envelope"></i> E-Mail <small>(Office 365)</small></a>
     		<a href="https://www.ease.ed.ac.uk/cosign.cgi?cosign-eucsCosign-www.learn.ed.ac.uk&https://www.learn.ed.ac.uk/cgi-bin/login.cgi" target="_blank" class="btn btn-block">Go to Learn</a>
         <a href=<?echo('"'); echo("mailto:"); echo($ptemail); echo('"');?> class="btn btn-block">Email Personal Tutor</a>
-    		
+
     		<!--Global options/tasks-->
     		<h5>Options:</h5>
 
     		<a href="http://54.228.211.86/ilw/index.php/admin/logout" class="btn btn-inverse btn-block">Logout</a>
-    	</div>	
+    	</div>
 
     </div>
     <!--/Sidebar-->
@@ -79,11 +79,11 @@
           <h4><a href="#notifModal" data-toggle="modal">You have 3 notifications!</a></h4>
 
           <p>Some common tasks are listed underneath. Above, the "me" tab takes you to a page about you, the "studies" tab takes you to all things related to your degree and the "local" tab shows you what's happening around town. </p>
-        
+
         </div>
 
         <div class="row-fluid">
-          
+
           <div class="span6">
             <div class="well">
 
@@ -126,7 +126,7 @@
         </div><!--/row-->
 
           <div class="row-fluid">
-          
+
           <div class="span6">
             <div class="well">
             <h2>Informatics</h2>
@@ -224,7 +224,7 @@
 <!--Le Javascript-->
 
 <script src="http://54.228.211.86/ilw/resources/js/bootstrap.js"></script>
-<!-- <script src="http://localhost:8888/ilw/resources/js/holder.js"></script> -->
+<!-- <script src="/ilw/resources/js/holder.js"></script> -->
 
 </body>
 </html>

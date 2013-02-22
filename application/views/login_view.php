@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
    <meta charset="utf-8">
-   
+
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" type="text/css" href="http://localhost:8888/ilw/resources/css/bootstrap.min.css">
-   <link rel="stylesheet" type="text/css" href="http://localhost:8888/ilw/resources/css/bootstrap-responsive.min.css">
+   <link rel="stylesheet" type="text/css" href="/ilw/resources/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="/ilw/resources/css/bootstrap-responsive.min.css">
 
    <title>Login</title>
-   
+
    <style type="text/css">
       body {
         padding-top: 40px;
@@ -69,5 +69,5 @@ echo form_open('admin', $attributes); ?>
 
 
 </body>
-</html>	
+</html>
 
