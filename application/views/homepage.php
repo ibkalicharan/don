@@ -85,7 +85,7 @@
         <div class="row-fluid">
 
           <div class="span6">
-            <div class="well">
+            <div>
 
             <h2>Timetable</h2>
             <hr>
@@ -95,7 +95,7 @@
           </div><!--/span-->
 
           <div class="span6">
-            <div class="well">
+            <div>
             <h2>Personal Tutor</h2>
             <hr>
             <p>Your Personal Tutor is your first contact for academic guidance and support. Here, you can send confidential messages to them or request meetings.</p>
@@ -106,7 +106,7 @@
 
           <div class="row-fluid">
           <div class="span6">
-            <div class="well">
+            <div>
             <h2>Help & Support</h2>
             <hr>
             <p>Got a problem? Need some help or advice? Here you'll find loads of local support services outside of the University that can help you with all manner of problems.</p>
@@ -116,7 +116,7 @@
           </div><!--/span-->
 
           <div class="span6">
-            <div class="well">
+            <div>
             <h2>EUSA</h2>
             <hr>
             <p>Edinburgh University Students Association. Not just for Teviot; they manage many social events, campaigns and decisions regarding university life. They also provide a wide range of support services and ways to get involved.</p>
@@ -128,7 +128,7 @@
           <div class="row-fluid">
 
           <div class="span6">
-            <div class="well">
+            <div>
             <h2>Informatics</h2>
             <hr>
             <p>You are listed as an Informatics student. Go straight to your home school's webpage.</p>
@@ -137,7 +137,7 @@
           </div><!--/span-->
 
           <div class="span6">
-            <div class="well">
+            <div>
             <h2>Nav@ED</h2>
             <hr>
             <form action="http://maps.google.co.uk/maps" method="get" target="_blank">
