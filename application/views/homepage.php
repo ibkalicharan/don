@@ -47,7 +47,7 @@
     		<!--User Info-->
     		<p>Welcome, Connor!</p>
 
-    		<p><center><img src="holder.js/140x140" class="img-polaroid"></center><p>
+    		<p><center><img src="resources/img/cat_profile.jpg" class="img-polaroid"></center><p>
 
     		<p><small>Connor Stuart<br>S1204589<br>College of Science and Engineering<br>School of Informatics<br>Master of Informatics (MInf)<br>Year 1</small></p>
 
@@ -176,7 +176,7 @@
 
 <script src="resources/js/jquery.min.js"></script>
 <script src="resources/js/bootstrap.js"></script>
-<script src="resources/js/holder.js"></script>
+<!-- <script src="resources/js/holder.js"></script> -->
 
 </body>
 </html>
