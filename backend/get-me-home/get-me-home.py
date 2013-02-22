@@ -76,11 +76,18 @@ def get_quotes_html(destination_place, outbound_date, api_key):
 
     try:
         r = requests.get(query_url)
-    except requests.exceptions.ConnectionError, e:
+    except requests.exceptions.RequestException, e:
         raise e
-    quotes = r.json['Quotes']
-    carriers = r.json['Carriers']
-    places = r.json['Places']
+
+    if r.status_code != 200:
+        return "Could not get valid response from Skyscanner API."
+
+    try:
+        quotes = r.json()['Quotes']
+        carriers = r.json()['Carriers']
+        places = r.json()['Places']
+    except Exception, e:
+        raise e
 
     flights = []
     for quote in quotes:
