@@ -1,0 +1,8 @@
+@font-face{font-family: Roboto; scr: url('Roboto-Light.ttf');}
+input {font-family:"Roboto"; font-weight:normal; padding: 5px; margin: 5px;}
+body{font-family:"Roboto"; font-weight:normal;}
+h1 {color:#04518C; font-family:"Roboto"; font-weight:normal;}
+.centered{ margin: 0 auto; width: 300px; height: 400px;}
+
+
+
