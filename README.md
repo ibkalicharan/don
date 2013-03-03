@@ -1,7 +1,7 @@
 MyEd 2.oh-dear
 ==============
 
-[See it in action!](http://54.228.211.86/ilw/)
+[See it in action!](http://54.228.211.86/ilw/) Log in with username `s0000000` (seven zeroes) and password `testuser`.
 
 A proof of concept design on how some MyEd functionality could be implemented
 in an alternative way using a wide selection of University and City data sets.
